@@ -1,0 +1,28 @@
+{
+  "cli": {
+    "version": ">= 0.45.1"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "releaseChannel": "staging"
+    },
+    "testing": {
+      "distribution": "internal",
+      "releaseChannel": "testing",
+      "ios": {
+        "simulator": true
+      }
+    },
+    "staging": {
+      "releaseChannel": "staging"
+    },
+    "production": {
+      "releaseChannel": "production"
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
